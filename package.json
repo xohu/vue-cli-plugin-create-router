@@ -1,6 +1,6 @@
 {
   "name": "@xohu/vue-cli-plugin-create-router",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "vue-cli3 plugin",
   "main": "./index.js",
   "repository": {

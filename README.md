@@ -127,11 +127,12 @@ export default {
 启动项目后生成文件`router/index.js`
 
 ```
-import Vue from 'vue'
 
 // Layout 页面
 const layout = () => import('@/views/layout')
+// Home 页面
 import layoutHome from '@/views/layout/home'
+// 登录 页面
 import login from '@/views/login'
 
 const router = [
