@@ -1,0 +1,36 @@
+{
+  "name": "@xohu/vue-cli-plugin-create-router",
+  "version": "1.4.0",
+  "description": "vue-cli3 plugin",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xohu/vue-cli-plugin-create-router.git",
+    "directory": "vue-cli-plugin-create-router"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "generate",
+    "router",
+    "plugin",
+    "vue-cli-plugin-create-router"
+  ],
+  "author": "XoHu <zhuqinhu@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "globby": "^9.2.0",
+    "chalk": "^2.4.2",
+    "watch": "^1.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/xohu/vue-cli-plugin-create-router/issues"
+  },
+  "homepage": "https://github.com/xohu/vue-cli-plugin-create-router/blob/master/README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
