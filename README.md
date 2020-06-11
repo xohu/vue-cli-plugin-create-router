@@ -135,7 +135,7 @@ import layoutHome from '@/views/layout/home'
 // 登录 页面
 import login from '@/views/login'
 
-const router = [
+const routes = [
     {
         name: "/layout",
         path: "/layout",
@@ -164,7 +164,7 @@ const router = [
     }
 ]
 
-export default router
+export default routes
 ```
 
 ``` js
