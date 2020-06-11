@@ -388,13 +388,13 @@ module.exports = class CreateRouter {
                 content += `${res}\n\n`
             });
     
-            content += `const router = ${JSON.stringify(res.routes, null, 4)}`
+            content += `const routes = ${JSON.stringify(res.routes, null, 4)}`
                 .replace(/"component": "(\w+?)"/g, `"component": $1`)
                 .replace(/"beforeEnter": "(.*)"/gm, `"beforeEnter": $1`)
                 .replace(/"(\w+?)":/g, '$1:');
 
-            content += `\n\nexport default router`
-            // content += `\n\nexport default new Router({\n    routes: router,\n    scrollBehavior(to, from, savedPosition) {\n        if (this.scrollBehavior) return this.scrollBehavior(to, from, savedPosition)\n    }\n})`;
+            content += `\n\nexport default routes`
+            // content += `\n\nexport default new Router({\n    routes,\n    scrollBehavior(to, from, savedPosition) {\n        if (this.scrollBehavior) return this.scrollBehavior(to, from, savedPosition)\n    }\n})`;
 
 
             const dirname = path.resolve(this.options.cwd, './router')
