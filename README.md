@@ -163,6 +163,8 @@ const router = [
         component: login
     }
 ]
+
+export default router
 ```
 
 ``` js

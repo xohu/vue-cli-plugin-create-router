@@ -393,8 +393,10 @@ module.exports = class CreateRouter {
                 .replace(/"beforeEnter": "(.*)"/gm, `"beforeEnter": $1`)
                 .replace(/"(\w+?)":/g, '$1:');
 
+            content += `\n\nexport default router`
             // content += `\n\nexport default new Router({\n    routes: router,\n    scrollBehavior(to, from, savedPosition) {\n        if (this.scrollBehavior) return this.scrollBehavior(to, from, savedPosition)\n    }\n})`;
-    
+
+
             const dirname = path.resolve(this.options.cwd, './router')
             const fileName = `${ this.options.outputFileName || 'index' }.js`
     
